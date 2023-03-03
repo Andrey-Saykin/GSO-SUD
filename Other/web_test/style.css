@@ -1,0 +1,21 @@
+test > div {
+    width: 50%;
+    margin: auto;
+    padding: 0;
+}
+
+test table {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border-collapse: collapse;
+}
+
+thead {
+    border-bottom: 1px solid black;
+}
+
+.first_name, .last_name, .age {
+    width: 33%;
+    text-overflow: ellipsis;
+}
