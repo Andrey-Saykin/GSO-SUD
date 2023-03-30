@@ -7,6 +7,6 @@ msg: list = [
     'Input must have at least 1 character.'
 ]
 
-units: list = ['m','cm']
+units: list = ['m', 'cm']
 
-shapes: list = ['Rectangle','L-Shape']
+shapes: list = ['Rectangle', 'L-Shape']

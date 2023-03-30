@@ -1,9 +1,10 @@
 from helper import ni, msg, units, shapes
 from room import Room, set_name, set_living_space, set_shape, set_length, set_width
 
-def setUnit() -> str:
+
+def set_unit() -> str:
     """
-    User defines the used unit to show in length and width of rooms
+    Returns a string of selected unit
     """
     while True:
         print('\nWhich unit do you want?')
@@ -18,7 +19,7 @@ def setUnit() -> str:
 
 def room_number() -> int:
     """
-    User defines the number of rooms
+    Returns an integer of typed number of roooms
     """
     while True:
         print('\nEnter the number of rooms to add.')
@@ -39,8 +40,7 @@ def main() -> None:
     Runs the main program
     """
     rooms: list = [] 
-
-    unit = setUnit()
+    unit = set_unit()
 
     for i in range(1, room_number(), 1):
         room = Room(
@@ -48,15 +48,15 @@ def main() -> None:
             set_living_space(),
             set_shape()
         )
-
-        room.length = set_length(room.shape)
-        room.width = set_width(room.shape)
+        room.length, room.width = set_length(room.shape), set_width(room.shape)
 
         if isinstance(room.length, list) and isinstance(room.width, list):
             for length, width in room.length, room.width:
                 room.area += length * width
         elif room.length is not None and room.width is not None:
             room.area = room.length * room.width
+        else:
+            return print(f'Something went wrong. <Length: {room.length}, Width: {room.width}>')
 
         rooms.append(room)
     
@@ -74,6 +74,22 @@ def main() -> None:
     print(f'\nTotal space: {total_space}{unit}²')
     print(f'Living space: {living_space}{unit}²')
 
+    # while True:
+    #     print('\nIf you want to change some type in the number of the room you want to change.')
+    #     num = input('Number of room to change or any key to leave: ')
+    #     if not num.isnumeric():
+    #         break
+    #     num = int(num)
+    #     if len(rooms) < num:
+    #         print('Romm doesn\'t exists')  
+    #         continue
+    #     print('What do you want to change?')
+    #     # print(' • ')
+    #     for room in rooms[num-1]:
+    #         print(room)
+        
+
 
 if __name__ == '__main__':
+    print('\n\nWelcome to iRise.\n\n')
     main()

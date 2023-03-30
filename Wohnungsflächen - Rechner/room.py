@@ -92,8 +92,7 @@ def set_length(shape: str) -> float|list:
                 else:
                     length_list.append(length)
             if len(length_list) == 2:
-                return length_list
-    
+                return length_list  
 
 def set_width(shape: str) -> float|list:
     """
@@ -129,8 +128,7 @@ def set_width(shape: str) -> float|list:
                 else:
                     width_list.append(width)
             if len(width_list) == 2:
-                return width_list
-    
+                return width_list   
 
 def set_living_space() -> bool:
     """
