@@ -33,29 +33,44 @@ def isPalindrom(string: str) -> bool:
     return string == string[::-1]
 
 def menu():
+    repeat = True
     options = ('calculation', 'caeser', 'palindrom')
-    choice = input('Your Choice: ')
-    if choice == '0':
-        operator = input('operator: ')
-        try:
-            numbers = int(input('numbers: '))
-        except ValueError:
-            print(ValueError)
+    while repeat:
+        print('Choose an option.')
+        for i, option in enumerate(options):
+            print(f'{i} • {option}')
+        choice = input('Your Choice: ')
+        if choice == '0':
+            operator = input('operator (+-*/): ')
+            numbers = input('numbers: ')
+            result = calculate(operator, *[int(num) for num in numbers.split()])
+            print(result)
+
+        elif choice == '1':
+            char = input('character: ')
+            try:
+                shift = int(input('shift: '))
+            except ValueError:
+                print(ValueError)
+            else:
+                result = caeser(char, shift)
+                print(result)
+
+        elif choice == '2':
+            string = input('word: ')
+            result = isPalindrom(string)
+            print(result)
+
         else:
-            calculate(operator, numbers)
-    elif choice == '1':
-        char = input('character: ')
-        try:
-            shift = int(input('shift: '))
-        except ValueError:
-            print(ValueError)
-        else:
-            caeser(char, shift)
-    elif choice == '2':
-        string = input('word: ')
-        isPalindrom(string)
-    else:
-        print('Given option not found.')
+            print('Given option not found.')
+
+        answer = ''
+        while answer != 'W' and answer != 'Q':
+            answer = input('Do you want to continue? (W/Q)').upper()
+            if answer == 'Q':
+               repeat = False
+            elif answer != 'W':
+                print('invalid answer') 
 
 if __name__ == '__main__':
     menu()
