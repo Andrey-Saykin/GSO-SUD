@@ -24,6 +24,7 @@ Es gibt 3 Altersstufen von R2-D2:
 - Jung
 - Erwachsen
 - Alt
+
 Simulationsergebnisse werden in einer Tabelle widergegeben.
 
 ### Nim-Spiel
