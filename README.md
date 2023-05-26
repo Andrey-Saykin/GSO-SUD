@@ -1,6 +1,9 @@
 # Python Code für SUD Unterricht
 ## Erstes Jahr
 
+### Other
+Small scripts that are not important to mention.
+
 ### Schaltjahr Game
 Dieses beinhaltet ein Code für das automatische Generieren einer Jahreszahl und das Überprüfen ob diese Zahl ein Schaltjahr ist.
 
@@ -24,8 +27,20 @@ Es gibt 3 Altersstufen von R2-D2:
 - Jung
 - Erwachsen
 - Alt
+
 Simulationsergebnisse werden in einer Tabelle widergegeben.
 
 ### Nim-Spiel
 Ein Spiel wo man gegen den Computer spielt. Man soll Streichhölzer ziehen und wer das letzte Streichholz zieht verliert.
-Der Computer **soll** immer gewinnen.
+**Der Computer soll immer gewinnen**.
+
+### Berechnung von Quadratwurzel
+Ein Script um die Quadratwurzel zu berechnen.
+
+### Funktions Übungen
+Ein Python Script mit diesen Funktionen:
+- Calculator with only basic +, -, * & / with multiple numbers
+- caeser encoder
+- Palindrom Checker
+
+These Functions are accessable in a menu.
