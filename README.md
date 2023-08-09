@@ -1,46 +1,56 @@
-# Python Code für SUD Unterricht
-## Erstes Jahr
+# Python Code for SUD Lesson
+
+This is my project library of all programs that I programmed in school.
+
+## First year
 
 ### Other
+
 Small scripts that are not important to mention.
 
-### Schaltjahr Game
-Dieses beinhaltet ein Code für das automatische Generieren einer Jahreszahl und das Überprüfen ob diese Zahl ein Schaltjahr ist.
+### Leap Year Game
 
-### Wohnungsflächenrechner
-Ein Flächenrechner von Wohnungsfläche.
-- Berechnung von Räumen:
-  - [x] Rechteckige Räume
-  - [x] L-Förmige Räume
-  - [ ] Dreieckige Räume
-  - [ ] Halbkreis-Förmige Räume
-  - [ ] Trapez-Förmige Räume
-- [x] Berechnung & Vorschau von Wohnungsfläche
-- [x] Berechung & Vorschau von Fläche
-- [x] Vorschau von allen eingetragenen Räumen
-- [ ] Daten bearbeitbar
-- [ ] Sprachenvielfalt (Deutsch, Englisch, Französisch, …)
+This includes a code for automatically generating a year and checking if that year is a leap year.
 
-### Populationsentwicklung von R2-D2
-Eine Simulation der Entwicklung von R2-D2. User kann Simulationsjahre angeben um so viele Jahre zu simulieren. 
-Es gibt 3 Altersstufen von R2-D2: 
-- Jung
-- Erwachsen
-- Alt
+### Living Area Calculator
 
-Simulationsergebnisse werden in einer Tabelle widergegeben.
+An area calculator for living spaces.
+- Room calculations:
+  - [x] Rectangular rooms
+  - [x] L-shaped rooms
+  - [ ] Triangular rooms
+  - [ ] Semi-circular rooms
+  - [ ] Trapezoidal rooms
+- [x] Calculation & preview of living space
+- [x] Calculation & preview of area
+- [x] Preview of all entered rooms
+- [ ] Editable data
+- [ ] Language variety (German, English, French, ...)
 
-### Nim-Spiel
-Ein Spiel wo man gegen den Computer spielt. Man soll Streichhölzer ziehen und wer das letzte Streichholz zieht verliert.
-**Der Computer soll immer gewinnen**.
+### Population Development of R2-D2
 
-### Berechnung von Quadratwurzel
-Ein Script um die Quadratwurzel zu berechnen.
+A simulation of R2-D2's development. Users can specify simulation years to simulate as many years as desired. There are three age stages for R2-D2:
+- Young
+- Adult
+- Old
 
-### Funktions Übungen
-Ein Python Script mit diesen Funktionen:
-- Calculator with only basic +, -, * & / with multiple numbers
-- caeser encoder
-- Palindrom Checker
+Simulation results will be presented in a table.
 
-These Functions are accessable in a menu.
+### Nim Game
+
+A game where you play against the computer. The goal is to draw matches (sticks), and the player who draws the last match loses.
+
+**The computer should always win.**
+
+### Calculation of Square Root
+
+A script to calculate the square root.
+
+### Function Exercises
+
+A Python script with the following functions:
+- Calculator with basic operations +, -, * & / for multiple numbers
+- Caesar encoder
+- Palindrome checker
+
+These functions are accessible through a menu.
