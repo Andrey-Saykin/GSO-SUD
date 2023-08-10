@@ -1,3 +1,4 @@
 __paycache__
 .venv
 .vscode
+.DS_STORE
